@@ -1,0 +1,158 @@
+body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .container {
+      border: 1px solid #000;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    .item {
+      background: #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* 1. Центровка по вертикали и горизонтали */
+    .container-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    /* 2. Равномерное распределение по горизонтали */
+    .container-2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 3. Прижать элементы к нижнему краю */
+    .container-3 {
+      display: flex;
+      align-items: flex-end;
+      height: 150px;
+    }
+
+    /* 4. Столбик, выравнивание по правому краю */
+    .container-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    /* 5. Равное пространство внутри контейнера */
+    .container-5 {
+      display: flex;
+    }
+
+    /* 6. Перенос элементов на новую строку */
+    .container-6 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* 7. Первый и последний элементы фиксированы */
+    .container-7 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 8. Выравнивание в конце строки */
+    .container-8 {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    /* 9. Элементы разной высоты по нижнему краю */
+    .container-9 {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    /* 10. Отступы между элементами */
+    .container-10 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* 11. Одинаковая ширина элементов */
+    .container-11 {
+      display: flex;
+    }
+    .container-11 .item {
+      flex: 1;
+    }
+
+    /* 12. Заполнение вертикального пространства */
+    .container-12 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px;
+    }
+
+    /* 13. Выравнивание вправо */
+    .container-13 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* 14. Центральный элемент занимает всё пространство */
+    .container-14 {
+      display: flex;
+    }
+    .container-14 .item:nth-child(2) {
+      flex: 1;
+    }
+
+    /* 15. Фиксированные и растягивающиеся элементы */
+    .container-15 {
+      display: flex;
+    }
+    .container-15 .item:nth-child(2),
+    .container-15 .item:nth-child(4) {
+      flex: 0 0 50px;
+    }
+    .container-15 .item:not(:nth-child(2)):not(:nth-child(4)) {
+      flex: 1;
+    }
+
+    /* 16. Центрирование по вертикали */
+    .container-16 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 150px;
+    }
+
+    /* 17. Размещение с конца строки */
+    .container-17 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* 18. Три строки, выравнены по левому краю */
+    .container-18 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .container-18 .row {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    /* 19. Распределение свободного пространства между элементами */
+    .container-19 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 20. Вертикальная ориентация с равным пространством */
+    .container-20 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
